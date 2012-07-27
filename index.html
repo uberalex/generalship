@@ -20,16 +20,12 @@
   <![endif]-->
 </head>
 <body>
-  <script type="text/x-handlebars">
-    {{#view App.MyView}}
-      <h1>Hello world!</h1>
-      <div id="chart"></div>  
-      <div id="units"></div>
-    {{/view}}
-  </script>
-  <!-- The missing protocol means that it will match the current protocol, either http or https. If running locally, we use the local jQuery. -->
+    <div id="container">
+        <div id="map"></div>
+        <div id="table"></div>
+    </div>
+    <!-- The missing protocol means that it will match the current protocol, either http or https. If running locally, we use the local jQuery. -->
   <script src="js/libs/jquery-1.7.2.min.js"></script>
-  <script src="js/libs/ember-0.9.8.1.min.js"></script>
   <script src="js/libs/d3.v2.min.js"></script>
   <script src="js/app.js"></script>
 </body>
